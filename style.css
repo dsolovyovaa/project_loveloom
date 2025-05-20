@@ -1,0 +1,218 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:hover {
+  color: black;
+}
+
+h3,
+h5 {
+  color: black;
+}
+
+.back {
+  background-color: darkgray;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: white;
+  padding: 15px;
+}
+
+body {
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1e1e1e;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-and-group {
+  width: calc(75%);
+  display: block;
+  margin: 0 auto;
+}
+
+.title-and-group h3 {
+  padding-top: 10px;
+  width: 50%;
+}
+
+.foto {
+  width: calc(25%);
+  height: auto;
+}
+
+.labs th:hover {
+  background-color: white;
+}
+
+.screen-shors {
+  width: 50%;
+}
+
+.fillling {
+  color: rgb(182, 219, 251);
+  display: none;
+}
+
+a:link,
+a:visited {
+  background-color: #4e70f5;
+  color: rgb(235, 196, 196);
+  padding: 2px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: #a43820;
+}
+
+.accordion_tab {
+  width: 100%;
+  padding: 10px;
+}
+
+.accordion_tab_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.accordion_tab_group {
+  width: 20%;
+}
+
+.accordion_tab_group .tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 8px 2px;
+  background: #fcd5ce70;
+  width: 100%;
+  display: inline-block;
+  color: #185055;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 0.8rem #eadad81e;
+  border: 2px solid #bc6c2520;
+}
+
+.accordion_tab_group .tab:hover {
+  background: #393939;
+  color: #fcd5ce;
+}
+
+#one:checked ~ .accordion_tab_group #one-tab,
+#two:checked ~ .accordion_tab_group #two-tab,
+#three:checked ~ .accordion_tab_group #three-tab,
+#four:checked ~ .accordion_tab_group #four-tab,
+#five:checked ~ .accordion_tab_group #five-tab,
+#six:checked ~ .accordion_tab_group #six-tab,
+#seven:checked ~ .accordion_tab_group #seven-tab,
+#eight:checked ~ .accordion_tab_group #eight-tab {
+  background: #bc6c25;
+  color: #fcd5ce;
+}
+
+.accordion_tab_wrapper input[type="radio"] {
+  display: none;
+}
+
+.accordion_tab_contents {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  background: #648df5;
+  color: #010101;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#one:checked ~ .accordion_tab_contents #one-tab-content,
+#two:checked ~ .accordion_tab_contents #two-tab-content,
+#three:checked ~ .accordion_tab_contents #three-tab-content,
+#four:checked ~ .accordion_tab_contents #four-tab-content,
+#five:checked ~ .accordion_tab_contents #five-tab-content,
+#six:checked ~ .accordion_tab_contents #six-tab-content,
+#seven:checked ~ .accordion_tab_contents #seven-tab-content,
+#eight:checked ~ .accordion_tab_contents #eight-tab-content {
+  display: block;
+}
+
+.accordion_tab_contents .accordion_tab_content {
+  display: none;
+}
+
+.accordion_tab_description img {
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+.accordion_tab_description_pro {
+  width: 1200px;
+}
+
+.accordion_tab_description_pro img {
+  max-width: 80%; /* або наприклад 400px */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* щоб центровано і з відступом */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+thead {
+  background-color: #0d63c5;
+  color: white;
+  text-align: left;
+}
+
+thead th {
+  padding: 12px 15px;
+  font-size: 1em;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #f1f7ff;
+}
+
+tbody td {
+  padding: 10px 15px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Звіт
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="container">
+            <div class="title-and-group">
+                <h3>Звіт з дисципліни:</h3>
+                <h3>"WEB-орієнтовані технологіі. Основи frontend та backend розробок."</h3>
+                <h5>Студенти: <br>
+                 ІС-21 Поліщук Дарія(ліворуч)<br>
+                ІК-23 Купрій Марина(праворуч)</h5>
+            </div>
+            <img class="foto" src="my photo.jpg" alt="MyPhoto">
+
+        </div>
+        <section>
+            <div class="container">
+                <div class="accordion_tab">
+                    <div class="accordion_tab_wrapper">
+                        <input type="radio" id="one" name="accordion_group" class="radio" checked>
+                        <input type="radio" id="two" name="accordion_group" class="radio">
+                        <input type="radio" id="three" name="accordion_group" class="radio">
+                        <input type="radio" id="four" name="accordion_group" class="radio">
+                        <input type="radio" id="five" name="accordion_group" class="radio" >
+                        <input type="radio" id="six" name="accordion_group" class="radio" >
+                        <input type="radio" id="seven" name="accordion_group" class="radio" >
+                        <input type="radio" id="eight" name="accordion_group" class="radio" >
+
+                        <div class="accordion_tab_group">
+                            <label for="one" class="tab" id="one-tab">Тема проєкту. Посилання на репозиторій
+                                звіту</label>
+                            <label for="two" class="tab" id="two-tab">Стек технологій. Опис бізнес логіки.</label>
+                            <label for="three" class="tab" id="three-tab">Функціональні та нефункціональні вимоги.</label>
+                            <label for="four" class="tab" id="four-tab">Скрін головної сторінки.</label>
+                            <label for="five" class="tab" id="five-tab">Frontend частина</label>
+                            <label for="six" class="tab" id="six-tab">Backend частина</label>
+                            <label for="seven" class="tab" id="seven-tab">База даних</label>
+                            <label for="eight" class="tab" id="eight-tab"> Висновки</label>
+                        </div>
+                        <div class="accordion_tab_contents">
+                            <div class="accordion_tab_content" id="one-tab-content">
+                                <p class="accordion_tab_description">
+                                <h2><b>Назва розробки: ВЕБ-ЗАСТОСУНОК «САЙТ ЗНАЙОМСТВ». </b></h2>
+                                <p>
+                                    <b>
+                                        Тема:                   <br>
+                                    <b>
+                                        Наведене технічне завдання поширюється на розробку «Веб-застосунок для знайомств», котра використовується для пошуку та знайомства людей в онлайн-форматі та призначена для соціальної взаємодії, створення нових особистих і романтичних зв’язків. Цільова аудиторія включає користувачів, зацікавлених у знайомствах для спілкування, дружби, романтичних стосунків чи довготривалих партнерських відносин.
+                                    </b>
+                                    <p>
+                                        Посилання на репозиторій
+                                        проєкту: <a href="https://github.com/dsolovyovaa/LoveLoom">https://github.com/dsolovyovaa/LoveLoom</a><br>
+                                        Посилання на сайт: <a href="https://loveloom.onrender.com/">https://loveloom.onrender.com/</a><br>
+                                    </p>
+                            </div>
+                            <div class="accordion_tab_content" id="two-tab-content">
+                                <h2 class="accordion_tab_title">Стек технології</h2>
+                                <p class="accordion_tab_description">
+                                    
+                                    Платформа для розробки:<br>
+                                    Node.js + React + Express.js.  <br>
+                                    React використовується для клієнтської частини. Це дозволяє створювати динамічні інтерфейси з високою продуктивністю та забезпечувати гарний користувацький досвід.<br>
+                                    Серверна частина реалізована на Node.js із використанням Express.js, так які ці технології  краще підходять для обробки асинхронних запитів у реальному часі, як це потрібно для чатів<br><br>
+                                    База даних:<br>
+                                    MongoDB <br>
+                                    MongoDB краще підходить для швидких змін у схемах та великої кількості користувачів із різними вимогами. Тому дана бази даних краще підходить для динамічних схем і швидких змін.  <br><br>
+                                    Інтеграція реального часу:<br>
+                                    Socket.IO<br>
+                                    Socket.IO забезпечує незалежність і можливість інтеграції в існуючий стек. Тому цей інструмент був обраний за його простоту в налаштуванні та сумісність із Node.js.
+                                </p>
+                                <p><h2>Опис бізнес-логіки веб-застосунку LoveLoom</h2>
+                                    <ul>
+                                      <li>
+                                        <strong>Створення облікового запису користувача:</strong>
+                                        <ul>
+                                          <li>Користувач переходить на сторінку реєстрації.</li>
+                                          <li>Якщо користувач вже авторизований – перенаправляється на головну сторінку.</li>
+                                          <li>Інакше – заповнює реєстраційну форму, перевіряється коректність введених даних на клієнтській стороні.</li>
+                                          <li>У разі коректності даних – вони надсилаються на сервер для валідації.</li>
+                                          <li>Після підтвердження – створюється обліковий запис, користувач автоматично авторизується.</li>
+                                          <li>Адміністратор розглядає новий профіль. Якщо виявлено небажаний контент – користувач блокується.</li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <strong>Оновлення профілю користувача:</strong>
+                                        <ul>
+                                          <li>Користувач переходить на сторінку профілю.</li>
+                                          <li>Авторизований користувач змінює поля профілю, виконується перевірка правильності введення.</li>
+                                          <li>Оновлені дані зберігаються у базі даних.</li>
+                                          <li>Якщо користувача було заблоковано – його доступ до сайту припиняється.</li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <strong>Пошук профілів за фільтрами:</strong>
+                                        <ul>
+                                          <li>Користувач авторизується та відкриває сторінку з фільтрами пошуку.</li>
+                                          <li>Виконується перевірка правильності введених параметрів пошуку.</li>
+                                          <li>Якщо користувач не заблокований – система підбирає релевантні профілі.</li>
+                                          <li>При вподобанні іншого користувача перевіряється взаємність – якщо вона є, створюється "метч".</li>
+                                          <li>Інформація оновлюється в базі даних, і користувач отримує відповідне повідомлення.</li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <strong>Обмін повідомленнями:</strong>
+                                        <ul>
+                                          <li>Користувач відкриває чат з іншим користувачем.</li>
+                                          <li>Після авторизації завантажуються історія повідомлень.</li>
+                                          <li>Нові повідомлення зберігаються в базі даних та відображаються обом учасникам чату.</li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <strong>Обробка скарг та блокування користувачів:</strong>
+                                        <ul>
+                                          <li>Користувач авторизується та створює скаргу через відповідну форму.</li>
+                                          <li>У разі коректного заповнення – скарга реєструється в базі даних, користувач блокується автоматично до рішення адміністратора.</li>
+                                          <li>Адміністратор розглядає скаргу та або підтверджує блокування, або знімає обмеження.</li>
+                                        </ul>
+                                      </li>
+                                    </ul></p>
+                            </div>
+                            <div class="accordion_tab_content" id="three-tab-content">
+                                <h2 class="accordion_tab_title">ВИМОГИ ДО ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ
+                                </h2>
+                                <p>
+                                    <h3>Вимоги до функціональних характеристик</h3>
+                                Програмне забезпечення повинно забезпечувати виконання наступних основних функції:
+                                </p>
+                                <P>Користувацького інтерфейсу
+                                    Функція аутентифікації  та реєстрації користувачів;<br>
+                                    Функція перегляду та редагування профілю;
+                                    </P>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt1.png"
+                                        alt="Структуру головної сторінки">
+                                    <img src="VUMOGU/funkt2.png" alt="Структуру головної сторінки">
+                                </p>
+                                <p>Функція фільтрації пошуку користувачів;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt3.png"
+                                        alt="Структуру головної сторінки">
+                                </p>
+                                <p>Функція перегляду профілів інших користувачів;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt4.png"
+                                        alt="Структуру головної сторінки">
+                                </p>
+                                <p>Функція обміну повідомленнями;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt5.png"
+                                        alt="Структуру головної сторінки">
+                                </p>
+                                <p>Функція блокування та скарги на користувача;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt6.png"
+                                        alt="Структуру головної сторінки">
+                                </p>
+                                <p>Функція розгляду скарг на користувачів для адміністратора;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt7.png"
+                                        alt="Структуру головної сторінки">
+                                </p> <p>Функція перевірки неприйнятного контенту у нових профілях для адміністратора;
+                                </p>
+                                <p class="accordion_tab_description"><img src="VUMOGU/funkt8.png"
+                                        alt="Структуру головної сторінки">
+                                </p>
+                                <p><h3>Вимоги до нефункціональних характеристик</h3>
+                               
+                                <h2>Для користувача:</h2>
+                                <ul>
+                                    <li>Можливість перегляду профілів інших користувачів</li>
+                                    <li>Можливість налаштувати фільтр пошуку користувачів</li>
+                                    <li>Можливість обміну повідомлення між користувачами</li>
+                                    <li>Можливість блокування та скарги на користувача</li>
+                                    <li>Доступ до історії повідомлень</li>
+                                </ul>
+
+                                <h2>Для адміністратора системи:</h2>
+                                <ul>
+                                    <li>Розгляд скарг користувачів (на профілі, повідомлення, контент)</li>
+                                    <li>Редагування та видалення небажаного контенту (образи, фейки, спам, цензура)</li>
+                                    <li>Перевірка нових профілів і завантажених матеріалів (фото)</li>
+                                </ul>
+
+                                <h2>Додаткові вимоги:</h2>
+                                <ul>
+                                    <li>Адаптивний дизайн для різних типів пристроїв (десктоп, мобільний)</li>
+                                </ul>
+
+                                <h2>Вимоги до надійності:</h2>
+                                <ul>
+                                    <li>Контроль введення інформації та захист від некоректних дій користувача</li>
+                                    <li>Валідація даних при реєстрації та авторизації</li>
+                                    <li>Фільтрація небажаного або небезпечного контенту</li>
+                                    <li>Цілісність інформації в базі даних</li>
+                                    <li>Шифрування особистих даних</li>
+                                </ul>
+
+                                <h2>Умови експлуатації:</h2>
+                                <p>Умови експлуатації згідно СанПін 2.2.2.542 – 96</p>
+
+                                <h2>Вид обслуговування:</h2>
+                                <p>Вимоги не висуваються, оскільки розробка не потребує спеціального обслуговування</p>
+
+                                <h2>Обслуговуючий персонал:</h2>
+                                <p>Вимоги не висуваються, оскільки розробка не потребує обслуговуючого персоналу</p>
+
+                                <h2>Вимоги до складу і параметрів технічних засобів:</h2>
+                                <p><strong>Мінімальна конфігурація:</strong></p>
+                                <ul>
+                                    <li>Тип процесору: Intel Core i5</li>
+                                    <li>Обсяг ОЗП: 4 Гб</li>
+                                    <li>Інтернет: від 20 Мбіт/с</li>
+                                </ul>
+                                <p><strong>Рекомендована конфігурація:</strong></p>
+                                <ul>
+                                    <li>Тип процесору: Intel Core i5</li>
+                                    <li>Обсяг ОЗП: 8 Гб</li>
+                                    <li>Інтернет: від 100 Мбіт/с</li>
+                                    <li>ОС: Windows 10</li>
+                                </ul>
+
+                                <h2>Вимоги до інформаційної та програмної сумісності:</h2>
+                                <p>Програмне забезпечення повинно працювати під управлінням операційних систем сімейства WIN32 (Windows XP, Windows NT і т.д.) або Unix</p>
+
+                                <h2>Вимоги до вхідних та вихідних даних:</h2>
+                                <p>Вимоги не висуваються, оскільки розробка не потребує</p>
+
+                                <h2>Вимоги до мови та середовища розробки:</h2>
+                                <ul>
+                                    <li>Мова програмування: JavaScript (Node.js + Express)</li>
+                                    <li>Середовище розробки: Visual Studio Code</li>
+                                </ul>
+
+                                <h2>Вимоги до вихідного коду:</h2>
+                                <p>Код має бути представлений у вигляді репозиторію</p>
+
+                                <h2>Маркування, пакування, транспортування та зберігання:</h2>
+                                <p>Вимоги не висуваються</p>
+
+                                <h2>Спеціальні вимоги:</h2>
+                                <p>Згенерувати версію веб-розгортання програмного забезпечення</p></p>
+                            </div>
+                            <div class="accordion_tab_content" id="four-tab-content">
+                                <h2 class="accordion_tab_title">Скрін головної сторінки</h2>
+                                <p>Вибір людей які нам подобаються</p>
+                                <p class="accordion_tab_description_pro">
+                                    <img src="project_screns/without.png"
+                                        alt=">Скрінголовної сторінки"> 
+                                    </p>
+                                <p>Коли є спільний "match" з'являється чат спілкування</p>
+                                <p class="accordion_tab_description_pro">
+                                     <img src="project_screns/match.png" alt=">Скрін головної сторінки">
+                                </p>
+                                <p>Чат спілкування в реальному часі</p>
+                                <p class="accordion_tab_description_pro">
+                                   <img src="project_screns/chat.png" alt=">Скрін головної сторінки">
+                                </p>
+                                <p>В профілі можна змінити нік, вік, вибрати кого ти шукаєш, а також обрати вікову категорію.<br>
+                                     Можна додати фото та опис.</p>
+                                <p class="accordion_tab_description_pro">
+                                   <img src="project_screns/profile.png" alt=">Скрінголовної сторінки">
+                                </p>
+                            </div>
+                            <div class="accordion_tab_content" id="five-tab-content">
+                                <h2 class="accordion_tab_title">Frontend</h2>
+                                <p class="accordion_tab_description">
+                                     <img src="front/front.png" alt=">front">
+                                </p>
+                            </div>
+                            <div class="accordion_tab_content" id="six-tab-content">
+                                <h2 class="accordion_tab_title">Backend</h2>
+                                <p class="accordion_tab_description">
+                                   <img src="backend/back.png" alt="Back">
+                                </p>
+                            </div>
+                            <div class="accordion_tab_content" id="seven-tab-content">
+                                <h2 class="accordion_tab_title">Бази даних</h2>
+                                <p class="accordion_tab_description">
+                                    <table >
+                                        <img src="bd.jpg"
+                                        alt="База даних">
+                                        <caption>Опис таблиці User</caption>
+                                        <thead>
+                                          <tr>
+                                            <th>Назва поля</th>
+                                            <th>Тип даних</th>
+                                            <th>Опис</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr><td>name</td><td>String</td><td>Ім'я користувача.</td></tr>
+                                          <tr><td>email</td><td>String</td><td>Електронна адреса користувача.</td></tr>
+                                          <tr><td>password</td><td>String</td><td>Хешований пароль користувача.</td></tr>
+                                          <tr><td>age</td><td>Number</td><td>Вік користувача.</td></tr>
+                                          <tr><td>gender</td><td>String</td><td>Гендер користувача: "man" або "woman".</td></tr>
+                                          <tr><td>bio</td><td>String</td><td>Короткий опис користувача (біографія).</td></tr>
+                                          <tr><td>image</td><td>String</td><td>Посилання на зображення профілю користувача.</td></tr>
+                                          <tr><td>genderPreference</td><td>String</td><td>Гендер, який користувач шукає: "man", "woman", або "everyone".</td></tr>
+                                          <tr><td>ageSearchMin</td><td>Number</td><td>Мінімальний вік для пошуку партнерів.</td></tr>
+                                          <tr><td>ageSearchMax</td><td>Number</td><td>Максимальний вік для пошуку партнерів.</td></tr>
+                                          <tr><td>likes</td><td>[ObjectId] (ref: User)</td><td>Масив користувачів, яких лайкнув цей користувач.</td></tr>
+                                          <tr><td>dislikes</td><td>[ObjectId] (ref: User)</td><td>Масив користувачів, яких дизлайкнув цей користувач.</td></tr>
+                                          <tr><td>matches</td><td>[ObjectId] (ref: User)</td><td>Масив користувачів, з якими є взаємний лайк (метч).</td></tr>
+                                          <tr><td>blocked</td><td>[ObjectId] (ref: User)</td><td>Масив користувачів, заблокованих цим користувачем.</td></tr>
+                                          <tr><td>role</td><td>String</td><td>Роль користувача: "user" або "admin".</td></tr>
+                                          <tr><td>isBlocked</td><td>Boolean</td><td>Статус блокування користувача (адміністратором).</td></tr>
+                                          <tr><td>isVerified</td><td>Boolean</td><td>Статус верифікації профілю користувача.</td></tr>
+                                          <tr><td>createdAt</td><td>Date</td><td>Дата створення профілю.</td></tr>
+                                          <tr><td>updatedAt</td><td>Date</td><td>Дата останнього оновлення профілю.</td></tr>
+                                        </tbody>
+                                      </table>
+
+                                      <table>
+                                        <caption> Опис таблиці Message</caption>
+                                        <thead>
+                                          <tr>
+                                            <th>Назва поля</th>
+                                            <th>Тип даних</th>
+                                            <th>Опис</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr><td>sender</td><td>ObjectId (ref: User)</td><td>Ідентифікатор користувача, який відправив повідомлення.</td></tr>
+                                          <tr><td>receiver</td><td>ObjectId (ref: User)</td><td>Ідентифікатор користувача, який отримав повідомлення.</td></tr>
+                                          <tr><td>content</td><td>String</td><td>Текст повідомлення.</td></tr>
+                                          <tr><td>createdAt</td><td>Date</td><td>Дата та час відправлення повідомлення.</td></tr>
+                                          <tr><td>updatedAt</td><td>Date</td><td>Дата та час останнього оновлення повідомлення.</td></tr>
+                                        </tbody>
+                                      </table>
+                                      <table>
+                                        <caption>Опис таблиці Complaint</caption>
+                                        <thead>
+                                          <tr>
+                                            <th>Назва поля</th>
+                                            <th>Тип даних</th>
+                                            <th>Опис</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr><td>user</td><td>ObjectId (ref: User)</td><td>Ідентифікатор користувача, який подав скаргу.</td></tr>
+                                          <tr><td>blockedUser</td><td>ObjectId (ref: User)</td><td>Ідентифікатор користувача, на якого подана скарга.</td></tr>
+                                          <tr><td>reasons</td><td>[String]</td><td>Причини подання скарги.</td></tr>
+                                          <tr><td>additionalInfo</td><td>String</td><td>Додаткова інформація про причини скарги.</td></tr>
+                                          <tr><td>status</td><td>String</td><td>Статус розгляду скарги: "pending" або "resolved".</td></tr>
+                                          <tr><td>createdAt</td><td>Date</td><td>Дата подання скарги.</td></tr>
+                                          <tr><td>updatedAt</td><td>Date</td><td>Дата останнього оновлення скарги.</td></tr>
+                                        </tbody>
+                                      </table>
+                                </p>
+                            </div>
+                            <div class="accordion_tab_contents">
+                                <div class="accordion_tab_content" id="eight-tab-content">
+                                  <h2 class="accordion_tab_title">Висновки</h2>
+                                  <p>
+                                    Проєкт було присвячено розробці веб-застосунку для автоматизації процесу знайомства між користувачами. Його реалізація має важливе практичне значення, оскільки відповідає сучасним вимогам до зручності, швидкості та безпеки онлайн-сервісів.
+                                  </p>
+                                
+                                  <p>
+                                    Робота над проєктом охопила всі етапи життєвого циклу ПЗ — від аналізу вимог до впровадження повноцінного функціоналу. Застосовано REST API на базі Node.js та Express.js, авторизацію реалізовано через JWT, дані захищено за допомогою bcryptjs. Рекомендаційна система базується на фільтрації за параметрами та взаємодії користувачів, а MongoDB з Mongoose забезпечує зручну роботу з базою даних.
+                                  </p>
+                                
+                                  <p>
+                                    Обмін повідомленнями реалізовано з використанням Socket.IO, що дозволяє працювати в реальному часі. Інтерфейс побудовано за допомогою React.js, що забезпечило його інтуїтивність і адаптивність.
+                                  </p>
+                                
+                                  <p>
+                                    Проєкт став прикладом ефективного використання сучасних технологій для створення безпечної, масштабованої та зручної платформи для онлайн-знайомств.
+                                  </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
